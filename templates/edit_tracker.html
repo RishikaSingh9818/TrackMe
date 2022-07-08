@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="/static/edit_tracker.css">
+    <title>Edit Tracker</title>
+</head>
+<body>
+    <!-- 
+    <h1>Edit Tracker</h1>
+    <form action="/edit/{{trackerid}}" method="POST" id="edit_tracker-form">
+        <div>
+            <label>ID : </label>
+            <input type="text" name="id" value={{trackerid}} disabled />
+        </div>
+        <div>
+            <label>Tracker Name : </label>
+            <input type="text" name="trackername" required />
+        </div>
+        <div>
+            <label>Tracker Description : </label>
+            <input type="text" name="trackerdescription" required />
+        </div>
+        <div>
+            <label>Tracker Type : </label>
+            <input type="text" name="trackertype" required />
+        </div>
+        <div><input type="submit" value = "Submit"></div>
+    </form> -->
+
+    <div class="container">
+        <h1>Edit Tracker</h1>
+        <hr>
+        <form action="/edit/{{trackerid}}" method="POST" id="edit_tracker-form">
+        <div class="row">
+            <div class="col-lg-6">
+                <label>ID</label>
+            </div>
+            <div class="col-lg-6">
+                <input type="text" name="id" value={{trackerid}} disabled />
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-lg-6">
+                <label>Tracker Name</label>
+            </div>
+            <div class="col-lg-6">
+                <input type="text" name="trackername" required />
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-lg-6">
+                <label>Tracker Description</label>
+            </div>
+            <div class="col-lg-6">
+                <input type="text" name="trackerdescription" required />
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-lg-6">
+                <label>Tracker Type</label>
+            </div>
+            <div class="col-lg-6">
+                <input type="text" name="trackertype" value={{tracker.tracker_type}} disabled />
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-lg-6">
+                <label>Settings</label>
+            </div>
+            <div class="col-lg-6">
+                <input type="text" name="settings" required/>
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-lg-12">
+                <input type="submit" class="btn btn-lg" id="Button" value="Submit Button">
+            </div>
+        </div>
+        </form>
+    </div>
+</body>
+</html>

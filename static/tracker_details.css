@@ -1,0 +1,30 @@
+
+
+h2{
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 300%;
+}
+
+
+.col-lg-12{
+    text-align: center;
+}
+
+#dashboard{
+    margin-top: 10px;
+}
+
+#logout{
+    text-align: right;
+    margin-top: 10px;
+}
+
+img{
+    width: 550px;
+    height: 300px;
+}
+
+body{
+    padding-bottom: 50px;
+}

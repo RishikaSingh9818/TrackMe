@@ -1,0 +1,37 @@
+.container{
+    padding-top: 30px;
+}
+
+.name{
+    font-size: large;
+}
+
+h1{
+    text-align: center;
+    margin-bottom: 50px;
+    font-weight: 200px;
+    font-size: 400%;
+}
+
+.col-lg-12{
+    text-align: center;
+}
+
+.headings{
+    text-align: center;
+    font-weight: bold;
+    font-size: larger;
+}
+
+.content{
+    text-align: center;
+}
+
+a, a:hover, a:focus, a:active {
+    text-decoration: none;
+    color: inherit;
+}
+
+#logout{
+    text-align: right;
+}
